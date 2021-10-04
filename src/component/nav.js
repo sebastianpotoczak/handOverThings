@@ -2,15 +2,31 @@
 
 
 const Nav = () => {
+
+    const loginUrl = "http://localhost:3000/#/login"
+    const registerUrl = "http://localhost:3000/#/rejestracja"
     return(
         <>
-            <h1>nav</h1>
-             <ul class="dropdown-menu" role="menu">
-                 <li><a href="#">Akcja</a></li>
-                <li><a href="#">Inna akcja</a></li>
-                <li><a href="#">Jeszcze inna akcja</a></li>
-                <li><a href="#">Oddzielona akcja</a></li>
+            <nav>
+                <div className="nav_contain">
+                    <div className="login_contain">
+                    <a href={loginUrl}>Zaloguj</a>
+                <a href={registerUrl}>Załóż konto</a>
+                    </div>
+              
+
+             <ul class="menu" role="menu">
+                <li><a href="#">Start</a></li>
+                <li><a href="#">O co chodzi?</a></li>
+                <li><a href="#">O nas</a></li>
+                <li><a href="#">Fundacja i organizajce</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
+
+                </div>
+           
+              
+            </nav>
         </>
     )
 }
