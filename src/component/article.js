@@ -10,14 +10,18 @@ const Article = () => {
     return(
         <>
        <article>
-           <div className="content">
-            <div className="article_title">
+            
+            <div className="article_title"> 
                 <h1>Wystarczą 4 proste kroki</h1>
                 <img src={decorationImage} />
             </div>
-            <div>
+        
                 <div className="article_config">
-                     <div className="article">
+                
+              
+                <div className="content">
+                <div className="article">
+               
                       
                              
                         
@@ -25,26 +29,26 @@ const Article = () => {
                 <div className="article_element">
                      <img src={tshirt} />
                                 <h1>Wybierz rzeczy</h1> 
-                                <p>ubrania, sprzęt, sprzęt i inne</p>
+                                <p>ubrania, sprzęt,<br /> sprzęt i inne</p>
                              </div>
 
                              <div className="article_element">
                              <img src={box} />
                              <h1>Spakuj je</h1> 
-                                <p>skorzystaj z worków na śmieci</p>
+                                <p>skorzystaj z <br/> worków na śmieci</p>
                              </div>
 
                              <div className="article_element">
                              <img src={focus} />
-                                <h1>Zdecyduj się komu chcesz pomóc</h1> 
-                                <p>wybierz zaufane miejsce</p>
+                                <h1>Zdecyduj się komu <br /> chcesz pomóc</h1> 
+                                <p>wybierz zaufane <br /> miejsce</p>
 
                              </div>
 
                              <div className="article_element">
                              <img src={reverse} />
                                 <h1>Zamów kuriera</h1> 
-                                <p>kurier przyjedzie w dogodnym terminie</p>
+                                <p>kurier przyjedzie <br/> w dogodnym terminie</p>
                              </div>
 
               
@@ -52,10 +56,10 @@ const Article = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="article_button">
                 <a href="#">ODDAJ<br /> RZECZY</a>
             </div>
-            </div>
+            
        </article>
         </>
     )
