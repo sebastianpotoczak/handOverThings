@@ -16,8 +16,8 @@ const AppView = () => {
             <Header />
             <Info />
             <Article />
-            <Section />
             <AboutUs />
+            <Section />
             <Concern />
             <Contact />
         </>
