@@ -1,11 +1,13 @@
 import tribal from '../assets/Decoration.svg'
 import signature from '../assets/Signature.svg'
 import peoplePhoto from '../assets/People.jpg'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const AboutUs = () => {
     return(
         <>
-            <div className="aboutMe">
+        <Element name="aboutMe">
+        <div className="aboutMe">
                 <div className="aboutContain">
                 <div className="leftAbout">
                         <h1>O nas</h1>
@@ -24,6 +26,9 @@ const AboutUs = () => {
                     <img src={peoplePhoto} />
                 </div>
             </div>
+
+        </Element>
+            
 
         </>
     )

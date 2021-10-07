@@ -3,12 +3,14 @@ import tshirt from '../assets/Icon-1.svg'
 import box from '../assets/Icon-2.svg'
 import focus from '../assets/Icon-3.svg'
 import reverse from '../assets/Icon-4.svg'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 const Article = () => {
 
     return(
         <>
+        <Element name="whats_going">
        <article>
             
             <div className="article_title"> 
@@ -57,10 +59,11 @@ const Article = () => {
                 </div>
             </div>
             <div className="article_button">
-                <a href="#">ODDAJ<br /> RZECZY</a>
+                <a href="http://localhost:3000/#/login">ODDAJ<br /> RZECZY</a>
             </div>
             
        </article>
+       </Element>
         </>
     )
 

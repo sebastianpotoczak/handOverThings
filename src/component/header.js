@@ -1,11 +1,13 @@
 import decorationImage from "../assets/Decoration.svg"
 import Nav from "./nav"
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Header = () => {
    
     
     return(
         <>
+        <Element name="start">
         <header> 
         <div className="header_right">
 
@@ -43,7 +45,7 @@ const Header = () => {
         </header>
        
         
-           
+         </Element>  
         </>
     )
 }
