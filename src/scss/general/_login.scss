@@ -15,6 +15,7 @@
         height: 45%;
     }
     .login_form{
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -111,4 +112,20 @@
     margin-top: 5px;
     color: red;
     font-weight: bold;
+}
+.logout_input{
+    width: 384px;
+    height: 220px;  
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+    font-family: $primaryFont;
+    a{
+        border: 1px solid #3C3C3C;
+        padding: 13px 17px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
 }

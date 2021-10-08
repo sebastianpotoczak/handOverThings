@@ -5,7 +5,7 @@ import AppView from './component/appView';
 import { Route, HashRouter as Router, Switch } from 'react-router-dom';
 import loginView from './component/login';
 import Register from './component/register';
-
+import Logout from './component/logout';
 
 
 const ReactRouter = () => {
@@ -15,6 +15,7 @@ const ReactRouter = () => {
           <Route exact path='/' component={AppView} />
           <Route exact path='/login' component={loginView} />
           <Route exact path='/rejestracja' component={Register} />
+          <Route exact path='/wylogowano' component={Logout} />
         </Switch>     
     </Router>
   )
