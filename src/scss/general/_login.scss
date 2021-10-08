@@ -33,7 +33,7 @@
        .login_input{
           
            width: 384px;
-            height: 200px;
+            height: 220px;
            background-color: #F0F1F1;
            justify-content: center;
            align-items: center;
@@ -78,7 +78,7 @@
 .register_input{
    
     width: 384px;
-    height: 270px;
+    height: 290px;
    background-color: #F0F1F1;
    justify-content: center;
    align-items: center;
@@ -100,4 +100,15 @@
     background-color: #F0F1F1;
    }
 
+}
+.login_error{
+    color: red;
+    font-family: $primaryFont;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.register_error{
+    margin-top: 5px;
+    color: red;
+    font-weight: bold;
 }
