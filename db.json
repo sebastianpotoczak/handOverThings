@@ -12,6 +12,44 @@
         "items": "ubrania, meble, zabawki"
       }
 
+    ],
+    "organisations": [
+      {
+       
+          "title": "Organizacja „Lorem Ipsum 1”",
+          "text": "Quis varius quam quisque id diam vel quam hobbym pulvinar.",
+          "items": "ubrania, jedzenie"
+      },
+      {
+        "title": "Organizacja „Lorem Ipsum 2”",
+        "text": "Quis varius quam quisque id diam vel quam hobbym pulvinar.",
+        "items": "ubrania, meble, zabawki"
+      },
+      {
+        "title": "Organizacja „Lorem Ipsum 3”",
+        "text": "Quis varius quam quisque id diam vel quam hobbym pulvinar.",
+        "items": "Mi, quis, hendrerit, dolor"
+      }
+
+    ],
+    "other": [
+      {
+       
+          "title": "Zbiórka „Lorem Ipsum 1”",
+          "text": "Hendrerit gravida rutrum quisque non tellus orci auctor augue.",
+          "items": "Ut, aliquam, purus, usiądź, amet"
+      },
+      {
+        "title": "Zbiórka „Lorem Ipsum 2”",
+        "text": "Hendrerit gravida rutrum quisque non tellus orci auctor augue.",
+        "items": "Ut, aliquam, purus, usiądź, amet"
+      },
+      {
+        "title": "Zbiórka „Lorem Ipsum 3”",
+        "text": "Hendrerit gravida rutrum quisque non tellus orci auctor augue.",
+        "items": "Mi, quis, hendrerit, dolor"
+      }
+
     ]
 }
      
