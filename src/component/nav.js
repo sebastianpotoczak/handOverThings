@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
@@ -18,22 +19,22 @@ const Nav = () => {
 
              <ul class="menu" role="menu">
                  
-             <Link to="start" smooth={true} className="react_scroll">
-                <li><a href="#">Start</a></li>
-                </Link>
+             <NavLink to="/" smooth={true} className="react_scroll">
+                <li>Start</li>
+                </NavLink>
             
                 <Link to="whats_going" smooth={true} className="react_scroll">
-                <li><a href="#">O co chodzi?</a></li>
+                <li>O co chodzi?</li>
                 </Link>
 
                 <Link to="aboutMe" smooth={true} className="react_scroll">
-                <li><a href="#">O nas</a></li>
+                <li>O nas</li>
                 </Link>
                 <Link to="company" smooth={true} className="react_scroll">
-                <li><a href="#">Fundacja i organizajce</a></li>
+                <li>Fundacja i organizajce</li>
                 </Link>
                 <Link to="contact" smooth={true} className="react_scroll">
-                <li><a href="#">Kontakt</a></li>
+                <li>Kontakt</li>
                 </Link>
             </ul>
 

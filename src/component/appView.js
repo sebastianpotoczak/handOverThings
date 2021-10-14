@@ -6,6 +6,7 @@ import Section from './section'
 import AboutUs from './aboutUs'
 import Concern from './organzation'
 import Info from './info'
+import Paginate from './pagination'
 
 
 const AppView = () => {
