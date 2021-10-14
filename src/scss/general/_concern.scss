@@ -12,15 +12,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+       
     }
     .concern_tittle{
         width: 100%;
-       
+       height: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+   
         img{
             width: 253px;
             margin-bottom: 50px;
@@ -73,7 +73,7 @@
     }
     .concern_element{
         width: 100%;
-        height: 100%;
+        
         
        
     }
@@ -84,5 +84,78 @@
         align-items: center;
         display: flex;
         flex-direction: column;
+        height: 100%;
+
+        ul{
+            display: flex;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+          }
+        }
+        li{
+            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+          
+        }
+        
     }
+
+
+.concern_position{
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
+
+
+.fund_contain{
+    max-width: 1344px;
+    width: 100%;
+    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3C3C3C;
+    align-items: center;
+   
+    h2{
+      font-size: 26px;
+      font-weight: bold;
+    }
+    p{
+font-size: 18px;
+font-weight: bold;
+    }
+    i{
+        font-size: 18px;
+    }
+   
+
+}
+
+
+
+#react-paginate ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#react-paginate li {
+  display: inline-block;
+}
+.pagination{
+    width: 100%;
+    height: 100px;
+   
+}
+.page-link{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+

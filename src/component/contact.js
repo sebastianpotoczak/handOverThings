@@ -98,9 +98,9 @@ const Contact = () => {
         }else{
 
             const dataToSend = {
-                name: `${name}`,
-                email: `${email}`,
-                message: `${text}`
+                name,
+                email,
+                message: text
             }
 
 
