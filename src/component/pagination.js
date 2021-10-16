@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Paginate = ({ postsPerPage, totalPosts, paginate }) => {
 
 
@@ -7,13 +9,19 @@ const Paginate = ({ postsPerPage, totalPosts, paginate }) => {
     for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
       pageNumbers.push(i);
     }
+
+
+
+
+
+
   
     return (
      
         <ul className='pagination'>
           {pageNumbers.map(number => (
             <li key={number} className='page-item'>
-              <a onClick={(e) => (paginate(number), e.preventDefault())} href='#' className='page-link'>
+              <a onClick={(e) => (paginate(number), e.preventDefault())}  href='#' className='page-link'>
                 {number}
               </a>
             </li>
