@@ -156,6 +156,25 @@ font-weight: bold;
    
 }
 
+.pagination{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $primaryFont;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px;
+        border: 1px solid white;
+        &:hover{
+            border: 1px solid black;
+           
+            
+        }
+    }
+}
 
 
 
