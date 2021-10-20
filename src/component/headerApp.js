@@ -50,7 +50,12 @@ const HeaderApp = () => {
                 </div>
             </div>
             </div>
-   
+            <div className="form_info">
+          <div className="form_info_content">
+          <h1>Ważne!</h1>
+          <p>Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je przekazać..</p>
+      </div>
+      </div>
            
         </>
     )

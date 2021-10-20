@@ -25,12 +25,7 @@
 }
 
 
-.form_app{
-    width: 100%;
-    height: 90vh;
-    background-image: url("../../assets/Background-Form.jpg");
-   
-}
+
 
 .form_app_element{
     display: flex;
@@ -95,3 +90,37 @@
      
    }
 }
+.forms_app{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../../assets/Background-Form.jpg");
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.form_app{
+   position: relative;
+    width: 100%;
+    height: 100%;
+ 
+
+}
+
+.form_steps{
+ position: absolute;
+ left: 142px;
+ top: 40px;
+}
+
+.multi_button {
+    margin-left: 142px;
+    button{
+        width: 180px;
+        height: 79px;
+        background: none;
+        border: 1px solid black;
+        margin-right: 10px;
+    }
+   
+}
+
