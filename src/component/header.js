@@ -29,7 +29,7 @@ const Header = () => {
              </div>
              <img src={decorationImage} />
              <div className="button_header">
-             <a href="http://localhost:3000/#/login">ODDAJ <br /> RZECZY</a>
+             <a href="http://localhost:3000/#/oddaj-rzeczy">ODDAJ <br /> RZECZY</a>
              <a href="#">ZORGANIZUJ ZBIÓRKĘ</a>
              </div>
              </div>

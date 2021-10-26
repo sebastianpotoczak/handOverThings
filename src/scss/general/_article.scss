@@ -1,9 +1,11 @@
 article{
     height: 624px;
     width: 100%;
-
     display: flex;
+
+
     flex-direction: column;
+  
    
     .article_title{
         display: flex;
@@ -26,6 +28,8 @@ article{
         background-color: #F0F1F1;
         flex-direction: row;
         align-items: center;
+        
+     
        
      
             .article{
@@ -34,6 +38,11 @@ article{
                 justify-content: space-around;
                 
                 height: 100%;
+                @include mobile {
+                    flex-direction: column;
+                    
+                }
+               
                
                .article_element{
                    display: flex;

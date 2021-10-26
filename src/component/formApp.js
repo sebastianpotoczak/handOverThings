@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // import MultiStep  from 'react-multistep';
 import MultiStep from "./multiStep";
-import renderNav from "./multiStep";
 
 
+import {Checkbox, Radio} from 'react-btn-checkbox';
 
 const FormApp = () => {
 
@@ -11,7 +11,7 @@ const FormApp = () => {
     const steps = [
         {name: 'StepOne', component: <FormFirst/>},
         {name: 'StepTwo', component: <FormSecond/>},
-        {name: 'StepThree', component: <FormThird/>},
+        {name: 'StepThree', component: <FormThird />},
         {name: 'StepFour', component: <FormFourth/>}
       ];
 
@@ -43,6 +43,7 @@ const FormFirst = (e) => {
         <div className="form_app" >
           
           <div className="Form_first"  >
+              <h1>Zaznacz co chcesz oddać:</h1>
             <div>
                 <input type="radio" value="ubrania, które wprowadzają się do ponownego powrotu" name="things" onClick={handleChange} />
                 <p>ubrania, które wprowadzają się do ponownego powrotu</p>
@@ -77,11 +78,11 @@ const FormFirst = (e) => {
 
 const FormSecond = () => {
         
-    const[things, setThings] = useState("");
+    const[bag, setBag] = useState("");
     
     const handleChange = (e) => {
         const newThings = e.target.value;
-        setThings(newThings)
+        setBag(newThings)
     }
     return(
         <>
@@ -92,7 +93,18 @@ const FormSecond = () => {
       <div className="form_app" >
   
         <div className="Form_first"  >
-   
+            <h1>Podaj 60l worków, w które spakowałeś / aś rzeczy:</h1>
+        </div>
+        <div className="second_form_element">
+            <h2>Liczba 60l worków</h2>
+            <select value={bag} onChange={handleChange}>
+                <option className="second_element" disabled value="">- wybierz -</option>
+                <option className="second_element">1</option>
+                <option className="second_element">2</option>
+                <option className="second_element">3</option>
+                <option className="second_element">4</option>
+                <option className="second_element">5</option>
+            </select>
         </div>
       </div>
       </>
@@ -104,12 +116,26 @@ const FormSecond = () => {
 }
 
 const FormThird = () => {
+  
     const[things, setThings] = useState("");
+    const[people, setPeople] = useState([])
     
     const handleChange = (e) => {
         const newThings = e.target.value;
         setThings(newThings)
     }
+
+    const handleChangeTwo = (e) => {
+        const newPeople = e.target.value;
+        setPeople(newPeople)
+    }
+
+    const[First, setFirst] = useState(false);
+    const[Second, setSecond] = useState(false);
+    const[Third, setThird] = useState(false)
+
+
+  
     return(
         <>
           <div className="form_second">
@@ -120,7 +146,28 @@ const FormThird = () => {
       <div className="form_app" >
   
         <div className="Form_first"  >
-         
+       
+        </div>
+        <div>
+            <h2>Lokalizacja:</h2>
+            <select>
+                <option>- wybierz -</option>
+                <option>Poznań</option>
+                <option>Warszawa</option>
+                <option>Kraków</option>
+                <option>Wrocław</option>
+                <option>Katowice</option>
+            </select>
+        </div>
+        <div>
+            <h2>Komu chcesz pomóc?</h2>
+
+
+
+        </div>
+        <div>
+            <h2>Wpisz nazwę konetnej organizacji (opcjonalnie)</h2>
+            <input />
         </div>
       </div>
       </>
@@ -186,4 +233,11 @@ const FormResult = () => {
     )
 }
 
-export default FormApp
+
+
+
+
+
+  export default FormApp
+
+
