@@ -59,7 +59,7 @@ const Article = () => {
                 </div>
             </div>
             <div className="article_button">
-                <a href="http://localhost:3000/#/login">ODDAJ<br /> RZECZY</a>
+                <a href="http://localhost:3000/#/oddaj-rzeczy">ODDAJ<br /> RZECZY</a>
             </div>
             
        </article>
